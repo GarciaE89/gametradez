@@ -1,5 +1,5 @@
 const { AuthenticationError } = require("apollo-server-express");
-const { User, Thought } = require("../models");
+const { User, Product } = require("../models");
 const { signToken } = require("../utils/auth");
 
 const resolvers = {
@@ -8,7 +8,7 @@ const resolvers = {
       if (context.user) {
         const userData = await User.findOne({ _id: context.user._id })
           .select("-__v -password")
-          .populate("posts");
+          .populate("products");
 
         return userData;
       }
@@ -16,20 +16,20 @@ const resolvers = {
       throw new AuthenticationError("Not logged in");
     },
     users: async () => {
-      return User.find().select("-__v -password").populate("posts");
+      return User.find().select("-__v -password").populate("products");
     },
     user: async (parent, { username }) => {
       return User.findOne({ username })
         .select("-__v -password")
 
-        .populate("posts");
+        .populate("products");
     },
-    posts: async (parent, { username }) => {
+    products: async (parent, { username }) => {
       const params = username ? { username } : {};
-      return Post.find(params).sort({ createdAt: -1 });
+      return Product.find(params).sort({ createdAt: -1 });
     },
-    post: async (parent, { _id }) => {
-      return Post.findOne({ _id });
+    product: async (parent, { _id }) => {
+      return Product.findOne({ _id });
     },
   },
 
@@ -56,20 +56,20 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
-    addPost: async (parent, args, context) => {
+    addProduct: async (parent, args, context) => {
       if (context.user) {
-        const post = await Post.create({
+        const product = await Product.create({
           ...args,
           username: context.user.username,
         });
 
         await User.findByIdAndUpdate(
           { _id: context.user._id },
-          { $push: { posts: post._id } },
+          { $push: { products: product._id } },
           { new: true }
         );
 
-        return post;
+        return product;
       }
 
       throw new AuthenticationError("You need to be logged in!");

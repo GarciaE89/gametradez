@@ -5,12 +5,12 @@ const typeDefs = gql`
     _id: ID
     username: String
     email: String
-    posts: [Post]
+    products: [Product]
   }
 
-  type Post {
+  type Product {
     _id: ID
-    postText: String
+    productText: String
     createdAt: String
     username: String
   }
@@ -24,14 +24,14 @@ const typeDefs = gql`
     me: User
     users: [User]
     user(username: String!): User
-    posts(username: String): [Post]
-    post(_id: ID!): Post
+    products(username: String): [Product]
+    product(_id: ID!): Product
   }
 
   type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
-    addPost(postText: String!): Post
+    addProduct(productText: String!): Product
   }
 `;
 
