@@ -1,11 +1,9 @@
 
 main {
-	margin: 0 auto;
-	max-width: 90%;
-  padding: 50px 30px;
+	max-width: 80%;
 }
 :root {
-  --primary: #54ff73;
+  --primary: #5454ff;
   --secondary: #F3A847;
   --tertiary: #B12704;
   --light: #fafafa;
@@ -175,7 +173,6 @@ textarea {
 
 .flex-row {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .space-between {
@@ -299,10 +296,51 @@ a {
   padding-left: 0px;
 }
 
-div {
+/* div {
   padding-left: 15px;
-}
+} */
 
 #footer {
   padding-left: 30%;
 }
+
+#pagename {
+  padding-right: 14px;
+}
+
+#header li {
+  padding-top: 14px;
+}
+
+#navi {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#maintext {
+  width: 85%;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 644px) {
+#header{
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#navi{
+  flex-direction: column;
+}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 4px 16px;
+}
+

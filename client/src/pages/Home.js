@@ -4,7 +4,6 @@ import React from "react";
 const Home = () => {
   return (
     <div>
-        <p>Home</p>
         <img src={require('../assets/img/anitest.gif').default}/>
     </div>
   );

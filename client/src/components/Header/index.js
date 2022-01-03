@@ -6,12 +6,13 @@ function Header(props) {
   return (
     <ul className="flex-row" id="header">
       <h2>
-        <a id="c" data-testid="link" href="/">
+        <a id="pagename" data-testid="link" href="/">
           Gametradez
         </a>
       </h2>
+      <div id="navi">
       {tabs.map(tab => (
-        <li className="mx-2 my-5" key={tab}>
+        <li className="mx-1" key={tab}>
           <a
             href={'#' + tab.toLowerCase()}
             // Whenever a tab is clicked on,
@@ -25,6 +26,7 @@ function Header(props) {
           </a>
         </li>
       ))}
+      </div>
     </ul>
   );
 }
