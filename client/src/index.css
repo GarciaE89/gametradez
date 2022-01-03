@@ -320,8 +320,8 @@ a {
 
 #maintext {
   width: 85%;
-  padding-left: 50px;
-  padding-top: 50px;
+  padding-left: 100px;
+  padding-top: 0px;
 }
 
 .hoverWrapper:hover #hoverShow1 {
