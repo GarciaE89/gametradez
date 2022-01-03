@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function Header(props) {
   const tabs = ['About', 'Tradez', 'Users', 'Login', 'Register'];
   return (

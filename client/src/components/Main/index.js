@@ -32,9 +32,18 @@ function Main() {
   return (
     <div>
       {/* Pass the state value and the setter as props to Header */}
-      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+      <div class="hoverWrapper">
+      <div class="arrow-container">
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+        <div class="arrow"></div>  
+      </div>
+        <div id="hoverShow1">
+          <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+        </div>
+      </div>
       {/* Call the renderPage function passing in the currentPage */}
-      <div>{renderPage(currentPage)}</div>
+      <div id="mainWindow">{renderPage(currentPage)}</div>
     </div>
   );
 }
