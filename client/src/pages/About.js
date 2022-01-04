@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <div>
-        <p style={{ width: '70%' }}>
+        <p id="maintext">
         An online game and game asset trading
          site.  
         A fast easy to use, mobile friendly

@@ -3,7 +3,7 @@ import React from "react";
 const Tradez = () => {
   return (
     <div>
-        <p>Tradez</p>
+        <p id="maintext">Tradez</p>
     </div>
   );
 };
