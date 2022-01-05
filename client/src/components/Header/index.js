@@ -1,7 +1,15 @@
 import React from 'react';
+// import Auth from '../../utils/auth';
 
 function Header(props) {
   const tabs = ['About', 'Tradez', 'Users', 'Login', 'Register'];
+
+  // if (!Auth.loggedIn() ) {
+  //   const tabs = ['About', 'Tradez', 'Users', 'Login', 'Register'];
+  // } else {
+  //   const tabs = ['About', 'Tradez', 'Users', 'logout'];
+  // }
+  
   return (
     <ul className="flex-row" id="header">
       <h2>
