@@ -31,10 +31,8 @@ function Login(props) {
 
   return (
     <div className="container my-1 register-login-page">
-      <Link to="/#Register">← Signup</Link>
 
       <h2>Login</h2>
-
       <form onSubmit={handleFormSubmit} className="login-container">
         <div className="flex-row space-between my-2">
           <label htmlFor="email">Email address:</label>

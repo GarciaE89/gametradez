@@ -32,7 +32,6 @@ function Register(props) {
 
   return (
     <div className="container my-1 register-login-page">
-      <Link to="/login">← Go to Login</Link>
 
       <h2>Register</h2>
 

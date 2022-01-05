@@ -443,4 +443,9 @@ a {
   #navi {
     width: 0;
   }
+
+  .register-container, .login-container {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
 }
