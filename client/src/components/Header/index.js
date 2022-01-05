@@ -1,14 +1,17 @@
 import React from 'react';
-// import Auth from '../../utils/auth';
+import Auth from '../../utils/auth';
 
 function Header(props) {
-  const tabs = ['About', 'Tradez', 'Users', 'Login', 'Register'];
-
-  // if (!Auth.loggedIn() ) {
-  //   const tabs = ['About', 'Tradez', 'Users', 'Login', 'Register'];
-  // } else {
-  //   const tabs = ['About', 'Tradez', 'Users', 'logout'];
-  // }
+  // const tabs = ['About', 'Tradez', 'Users', 'Login', 'Register'];
+  const logout = event => {
+    event.preventDefault();
+    Auth.logout();
+  };
+  if (!Auth.loggedIn() ) {
+    var tabs = ['About', 'Tradez', 'Users', 'Login', 'Register'];
+  } else {
+    var tabs = ['About', 'Tradez', 'Users'];
+  }
   
   return (
     <ul className="flex-row" id="header">
@@ -33,6 +36,10 @@ function Header(props) {
           </a>
         </li>
       ))}
+        {Auth.loggedIn()
+          ? <a href="/" onClick={logout} id="logoutlink">Logout</a>
+          : <a></a>    
+        }
       </div>
     </ul>
   );

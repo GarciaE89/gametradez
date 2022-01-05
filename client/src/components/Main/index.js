@@ -13,6 +13,7 @@ function Main() {
 
   // The renderPage method uses a switch statement to render the appropriate current page
   const renderPage = () => {
+
     switch (currentPage) {
       case 'About':
         return <About />;
@@ -24,6 +25,8 @@ function Main() {
         return <Login />;
       case 'Register':
         return <Register />;
+      case 'Logout':
+        return <Home />;
       default:
         return <Home />;
     }
