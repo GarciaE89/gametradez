@@ -56,23 +56,24 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
-    addProduct: async (parent, args, context) => {
-      if (context.user) {
-        const product = await Product.create({
-          ...args,
-          username: context.user.username,
-        });
+    addProduct: async (parent, args) => {
+      // if (context.user) {
+      const product = await Product.create({
+        ...args,
+        // firstName: context.user.firstName,
+      });
 
-        await User.findByIdAndUpdate(
-          { _id: context.user._id },
-          { $push: { products: product._id } },
-          { new: true }
-        );
+      //connects product to user
+      // await User.findByIdAndUpdate(
+      //   { _id: context.user._id },
+      //   { $push: { products: product._id } },
+      //   { new: true }
+      // );
 
-        return product;
-      }
+      return product;
+      // }
 
-      throw new AuthenticationError("You need to be logged in!");
+      // throw new AuthenticationError("You need to be logged in!");
     },
   },
 };
