@@ -44,5 +44,5 @@ Emmanuel Garcia
 * GitHub: https://github.com/GarciaE89
 
 ## Questions
-Gametradez welcomes any questions regarding the application. Feel free to message any of the contributors. 
+Gametradez welcomes any questions regarding the application. Feel free to message any of the contributors with the emails listed above. 
 
