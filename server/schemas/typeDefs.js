@@ -11,9 +11,11 @@ const typeDefs = gql`
 
   type Product {
     _id: ID
-    productText: String
+    productTitle: String
+    productDescription: String
+    price: Int
+    quantity: Int
     createdAt: String
-    username: String
   }
 
   type Auth {
@@ -37,7 +39,12 @@ const typeDefs = gql`
       email: String!
       password: String!
     ): Auth
-    addProduct(productText: String!): Product
+    addProduct(
+      productTitle: String!
+      productDescription: String!
+      price: Int
+      quantity: Int
+    ): Product
   }
 `;
 

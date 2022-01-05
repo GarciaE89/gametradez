@@ -33,15 +33,17 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_PRODUCT = gql`
-  mutation addProduct($products: [ID]!) {
-    addProducts(products: $products) {
-      products {
-        _id
-        productTitle
-        productDescription
-        price
-        quantity
-      }
-    }
+  mutation addProduct(
+    $productTitle: String!
+    $productDescription: String!
+    $price: Int!
+    $quantity: Int!
+  ) {
+    addProduct(
+      productTitle: $productTitle
+      productDescription: $productDescription
+      price: $price
+      quantity: $quantity
+    )
   }
 `;

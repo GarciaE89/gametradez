@@ -1,31 +1,30 @@
-import React, { useState } from 'react';
-import Header from '../Header';
-import Home from '../../pages/Home';
-import About from '../../pages/About';
-import Tradez from '../../pages/Tradez';
-import Users from '../../pages/Users';
-import Login from '../../pages/Login';
-import Register from '../../pages/Register';
+import React, { useState } from "react";
+import Header from "../Header";
+import Home from "../../pages/Home";
+import About from "../../pages/About";
+import Tradez from "../../pages/Tradez";
+import Users from "../../pages/Users";
+import Login from "../../pages/Login";
+import Register from "../../pages/Register";
 
 function Main() {
   // Using useState, set the default value for currentPage to 'Home'
-  const [currentPage, handlePageChange] = useState('Home');
+  const [currentPage, handlePageChange] = useState("Home");
 
   // The renderPage method uses a switch statement to render the appropriate current page
   const renderPage = () => {
-
     switch (currentPage) {
-      case 'About':
+      case "About":
         return <About />;
-      case 'Tradez':
+      case "Tradez":
         return <Tradez />;
-      case 'Users':
+      case "Users":
         return <Users />;
-      case 'Login':
+      case "Login":
         return <Login />;
-      case 'Register':
+      case "Register":
         return <Register />;
-      case 'Logout':
+      case "Logout":
         return <Home />;
       default:
         return <Home />;
@@ -35,14 +34,17 @@ function Main() {
   return (
     <div>
       {/* Pass the state value and the setter as props to Header */}
-      <div class="hoverWrapper">
-      <div class="arrow-container">
-        <div class="arrow"></div>
-        <div class="arrow"></div>
-        <div class="arrow"></div>  
-      </div>
+      <div className="hoverWrapper">
+        <div className="arrow-container">
+          <div className="arrow"></div>
+          <div className="arrow"></div>
+          <div className="arrow"></div>
+        </div>
         <div id="hoverShow1">
-          <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+          <Header
+            currentPage={currentPage}
+            handlePageChange={handlePageChange}
+          />
         </div>
       </div>
       {/* Call the renderPage function passing in the currentPage */}
