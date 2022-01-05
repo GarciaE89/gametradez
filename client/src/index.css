@@ -411,6 +411,11 @@ a {
   top: 75%;
 }
 
+#logoutlink {
+  padding-top: 14px;
+  padding-left: 11px;
+}
+
 @media screen and (max-width: 644px) {
   #header {
     flex-direction: column;
