@@ -26,9 +26,14 @@ The Gametradez SPA was built with the following technologies:
 - Apollo Server
 
 ## Contributors 
+John Woodland
+Colton Bloomquist
+Emmanuel Garcia
+
+## Contacts
 John Woodland: 
 * E-mail: johntaylorwoodland@gmail.com
-* Portfolio: https://github.com/jondagamkd/portfolio
+* GitHub: https://github.com/jondagamkd/portfolio
 
 Colton Bloomquist:
 * E-mail: coltonbloomquist@yahoo.com
@@ -38,4 +43,6 @@ Emmanuel Garcia
 * E-mail: garcia.emmanuel.eg@gmail.com
 * GitHub: https://github.com/GarciaE89
 
+## Questions
+Gametradez welcomes any questions regarding the application. Feel free to message any of the contributors. 
 
