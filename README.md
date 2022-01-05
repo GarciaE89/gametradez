@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# 🎮 Gametradez 🎮
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description 
+Gametradez is an ecommerce website, allowing "Gamerz" a safe platform to sell and buy anything video game realated. From gamez, to consolez and acessoriez. Gametradez faciliates the sale, and holds the funds until our gamerz can ensure they are buying what was advertised. Gamerz can view items for sale, but purchasing an item or posting an item will require a Gamer to create an account with Gametradez. 
 
-## Available Scripts
+* [Usage](#usage)
+* [Technologies](#Technologies) 🛠️
+* [Contributors](#Contributors)
+* [Contacts](#Contacts)
+* [Questions](#Questions)
 
-In the project directory, you can run:
 
-### `npm start`
+### Usage 
+Visit [Gametradez] () to start selling or buy anything video game related! For optimal use, create an account, since you will only be able to see sellerz posts as a guest.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img width="1435" alt="Gameztradez landing page" src="https://user-images.githubusercontent.com/74579301/148154176-484b6456-bd5d-4a5a-8cb4-19916a993878.png">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies 
+The Gametradez SPA was built with the following technologies:
+- MongoDB
+- Express.js
+- React
+- Node.js
+- GraphQL
+- JWT
+- Apollo Server
 
-### `npm test`
+## Contributors 
+John Woodland
+Colton Bloomquist
+Emmanuel Garcia
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contacts
+John Woodland: 
+* E-mail: johntaylorwoodland@gmail.com
+* GitHub: https://github.com/jondagamkd/portfolio
 
-### `npm run build`
+Colton Bloomquist:
+* E-mail: coltonbloomquist@yahoo.com
+* GitHub: https://github.com/ColtonBloomquist 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Emmanuel Garcia 
+* E-mail: garcia.emmanuel.eg@gmail.com
+* GitHub: https://github.com/GarciaE89
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Questions
+Gametradez welcomes any questions regarding the application. Feel free to message any of the contributors with the emails listed above. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
