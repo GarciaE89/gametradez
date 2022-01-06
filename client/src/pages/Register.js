@@ -32,7 +32,6 @@ function Register(props) {
 
   return (
     <div className="container my-1 register-login-page">
-
       <h2>Register</h2>
 
       <form onSubmit={handleFormSubmit} className="register-container">

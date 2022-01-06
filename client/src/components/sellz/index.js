@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const SellList = ({ products, title }) => {
   if (!products.length) {
@@ -9,29 +9,7 @@ const SellList = ({ products, title }) => {
   return (
     <div>
       <h3>{title}</h3>
-      {products &&
-        products.map(sell => (
-          // <div key={sell._id} className="card mb-3">
-          //   <p className="card-header">
-          //     <Link
-          //       to={`/profile/${sell.name}`}
-          //       style={{ fontWeight: 700 }}
-          //       className="text-light"
-          //     >
-          //       {sell.name}
-          //     </Link>{' '}
-          //     sell on {sell.price}
-          //   </p>
-          //   <div className="card-body">
-          //     <Link to={`/sell/${sell._id}`}>
-          //       <p>{sell.description}</p>
-          //     </Link>
-          //   </div>
-          // </div>
-
-          <p>{sell.name}</p>
-
-        ))}
+      {products && products.map((sell) => <p>{sell.name}</p>)}
     </div>
   );
 };

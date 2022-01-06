@@ -42,8 +42,9 @@ const typeDefs = gql`
     addProduct(
       productTitle: String!
       productDescription: String!
-      price: Int
-      quantity: Int
+      price: Int!
+      quantity: Int!
+      createdAt: String!
     ): Product
   }
 `;

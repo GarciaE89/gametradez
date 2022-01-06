@@ -24,12 +24,8 @@ const resolvers = {
 
         .populate("products");
     },
-    products: async (parent, { username }) => {
-      const params = username ? { username } : {};
+    products: async (parent) => {
       return Product.find(params).sort({ createdAt: -1 });
-    },
-    product: async (parent, { _id }) => {
-      return Product.findOne({ _id });
     },
   },
 
@@ -57,23 +53,10 @@ const resolvers = {
       return { token, user };
     },
     addProduct: async (parent, args) => {
-      // if (context.user) {
-      const product = await Product.create({
-        ...args,
-        // firstName: context.user.firstName,
-      });
-
-      //connects product to user
-      // await User.findByIdAndUpdate(
-      //   { _id: context.user._id },
-      //   { $push: { products: product._id } },
-      //   { new: true }
-      // );
+      console.log("add product triggered");
+      const product = await Product.create(...args);
 
       return product;
-      // }
-
-      // throw new AuthenticationError("You need to be logged in!");
     },
   },
 };

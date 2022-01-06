@@ -5,20 +5,26 @@ import Auth from "../utils/auth";
 import { ADD_PRODUCT } from "../utils/mutations";
 
 function Users(props) {
-  const [formState, setFormState] = useState({ email: "", password: "" });
+  const [formState, setFormState] = useState("");
   const [addProduct] = useMutation(ADD_PRODUCT);
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    await addProduct({
-      variable: {
+
+    //***************** ********************************/
+    const productResponse = await addProduct({
+      variables: {
         productTitle: formState.productTitle,
         price: formState.price,
         quantity: formState.quantity,
         productDescription: formState.productDescription,
       },
     });
-    console.log(formState.productTitle);
+    //***************** *******************************/
+    console.log("hello");
+    const newProduct = productResponse.data.addProduct.newProduct;
+
+    addProduct(newProduct);
   };
 
   const handleChange = (event) => {
@@ -28,36 +34,45 @@ function Users(props) {
       [name]: value,
     });
   };
+  // console.log(formState.productTitle);
+  // console.log(formState.price);
+  // console.log(formState.quantity);
+  // console.log(formState.productDescription);
 
   return (
     <div>
       <p id="maintext">Users</p>
 
       <div className="container my-1">
-        <form className="register-container">
-          {/* <form onSubmit={handleFormSubmit} className="register-container"> */}
+        <form onSubmit={handleFormSubmit} className="register-container">
           <div className="flex-row space-between my-2">
             <label htmlFor="">Title:</label>
             <input
               placeholder="Title"
               name="productTitle"
-              type="productTitle"
+              type="text"
               id="productTitle"
-              // onChange={handleChange}
+              onChange={handleChange}
             />
           </div>
           <div className="flex-row space-between my-2">
             <label htmlFor="price">Price:</label>
-            <input placeholder="$1.00" name="price" type="price" id="price" />
+            <input
+              placeholder="$1.00"
+              name="price"
+              type="number"
+              id="price"
+              onChange={handleChange}
+            />
           </div>
           <div className="flex-row space-between my-2">
             <label htmlFor="quantity">Quantity:</label>
             <input
               placeholder="1"
               name="quantity"
-              type="quantity"
+              type="number"
               id="quantity"
-              // onChange={handleChange}
+              onChange={handleChange}
             />
           </div>
           <div className="flex-row space-between my-2">
@@ -65,9 +80,9 @@ function Users(props) {
             <textarea
               placeholder="This is my product description"
               name="productDescription"
-              type="productDescription"
+              type="text"
               id="productDescription"
-              // onChange={handleChange}
+              onChange={handleChange}
             />
           </div>
           <div className="flex-row flex-end">
