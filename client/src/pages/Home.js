@@ -3,8 +3,9 @@ import React from "react";
 //<img src={require('../../assets/img/jtw.jpg').default}/>
 const Home = () => {
   return (
-    <div>
-        <img src={require('../assets/img/anitest.gif').default}/>
+    <div class="jumbotron">
+      <img src={require('../assets/img/gametradez.gif').default}/>
+      <div class="centered">GameTradez!</div>
     </div>
   );
 };

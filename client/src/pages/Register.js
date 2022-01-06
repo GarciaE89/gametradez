@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useMutation } from "@apollo/client";
 import Auth from "../utils/auth";
 import { ADD_USER } from "../utils/mutations";
+import background from "../assets/img/gametradez.gif";
 
 function Register(props) {
   const [formState, setFormState] = useState({ email: "", password: "" });
@@ -31,7 +32,7 @@ function Register(props) {
   };
 
   return (
-    <div className="container my-1 register-login-page">
+    <div className="container my-1 register-login-page" style={{ backgroundImage: `url(${background})` }}>
 
       <h2>Register</h2>
 

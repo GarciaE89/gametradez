@@ -356,7 +356,7 @@ a {
 .arrow-container {
   display: block;
   width: 50px;
-  height: 50px;
+  height: 100px;
   position: absolute;
   top: 30px;
   left: 50%;
@@ -416,6 +416,39 @@ a {
   padding-left: 11px;
 }
 
+.jumbotron{
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.centered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  z-index: 1;
+  margin: 0;
+  padding-bottom: 6rem;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+  animation: glow 2s ease-in-out infinite alternate;
+  text-align: center;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px #2d9da9;
+ }
+  to {
+    text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+ }
+}
+
 @media screen and (max-width: 644px) {
   #header {
     flex-direction: column;
@@ -446,11 +479,19 @@ a {
   }
 
   #navi {
-    width: 0;
+    z-index: 7;
   }
 
   .register-container, .login-container {
     padding-left: 0px;
     margin-left: 0px;
   }
+
+  .centered {
+    font-size: 2rem;
+  }
 }
+
+
+
+

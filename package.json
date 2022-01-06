@@ -17,5 +17,7 @@
   "devDependencies": {
     "concurrently": "^5.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@material/image-list": "^13.0.0"
+  }
 }

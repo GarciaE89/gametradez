@@ -8,9 +8,9 @@ function Header(props) {
     Auth.logout();
   };
   if (!Auth.loggedIn() ) {
-    var tabs = ['About', 'Tradez', 'Users', 'Login', 'Register'];
+    var tabs = ['About', 'Tradez', 'Post', 'Login', 'Register'];
   } else {
-    var tabs = ['About', 'Tradez', 'Users'];
+    var tabs = ['About', 'Tradez', 'Post'];
   }
   
   return (
