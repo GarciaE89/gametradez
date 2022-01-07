@@ -18,7 +18,7 @@ function Main() {
         return <About />;
       case "Tradez":
         return <Tradez />;
-      case "Users":
+      case "Post":
         return <Users />;
       case "Login":
         return <Login />;
