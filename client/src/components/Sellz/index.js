@@ -69,7 +69,7 @@ const SellList = ({ products, title }) => {
     <div>
     <h1>See whatz for sell here!</h1>
     <div className="flex-row">
-    <ImageList sx={{ width: 1000, height: 450 }}>
+    <ImageList sx={{ width: 1000, height: 1000 }}>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <a href={item.link} target="_blank">
