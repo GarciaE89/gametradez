@@ -13,7 +13,7 @@ Gametradez is an ecommerce website, allowing "Gamerz" a safe platform to sell an
 ### Usage 
 Visit [Gametradez] () to start selling or buy anything video game related! For optimal use, create an account, since you will only be able to see sellerz posts as a guest.  
 
-<img width="1435" alt="Gameztradez landing page" src="https://user-images.githubusercontent.com/74579301/148154176-484b6456-bd5d-4a5a-8cb4-19916a993878.png">
+![Screen Shot 2022-01-06 at 8 40 32 PM](https://user-images.githubusercontent.com/74579301/148487809-6083de14-c2da-4c74-89c1-e97c996d9b7b.png)
 
 ## Technologies 
 The Gametradez SPA was built with the following technologies:
